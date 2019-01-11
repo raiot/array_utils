@@ -25,4 +25,4 @@ To run with coverage
 Note: `nyc` report will be available under `.nyc_output` folder
 
 
-Made with :heart:` by Rene
+Made with :heart: by Rene
