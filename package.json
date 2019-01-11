@@ -1,0 +1,36 @@
+{
+  "name": "array_utils",
+  "version": "0.0.1",
+  "description": "This is an array utilery repository",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack -p",
+    "test": "mocha -r ts-node/register src/tests/**/*.test.ts",
+    "test:coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" mocha -r ts-node/register **/*.test.ts && nyc report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raiot/array_utils.git"
+  },
+  "author": "Rene Durazo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raiot/array_utils/issues"
+  },
+  "homepage": "https://github.com/raiot/array_utils#readme",
+  "dependencies": {
+    "path": "^0.12.7",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.2.2",
+    "webpack": "^4.28.4"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
+    "ts-node": "^7.0.1",
+    "webpack-cli": "^3.2.1"
+  }
+}
